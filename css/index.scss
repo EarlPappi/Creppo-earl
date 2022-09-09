@@ -17,6 +17,17 @@
     }
 }
 
+@mixin btn {
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #3671e9;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 2em;
+}
+
 .wrapper {
     width: 95%;
     margin: 0 auto;
@@ -115,8 +126,14 @@
         }
 
         .btn-p {
-            color: white;
-            background-color: #3671e9;
+            @include btn();
+
+            span{
+                background: white;
+                color: #3671e9;
+                padding: .7rem 1rem;
+                border-radius: 100%;
+            }
         }
     }
 
@@ -146,6 +163,65 @@
                 color: #E0E0E0;
                 line-height: 155%;
             }
+        }
+    }
+
+    .chooseSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        
+
+        @media (min-width: 767px) {
+            flex-direction: row;
+            gap: 3rem;
+        }
+
+        div{
+            @media (min-width: 767px) {
+                width: 50%;
+            }
+        }
+
+        h2{
+            @include h2Heading();
+        }
+        
+        p{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            color: #E0E0E0;
+            line-height: 140%;
+            font-weight: 300;
+
+
+            @media (min-width: 767px) {
+                width: 80%;
+            }
+        }
+
+        a{
+            @include btn();
+        }
+    }
+
+    .chooseAlt{
+        margin-top: 8rem;
+
+        h2{
+            @include h2Heading();
+            text-align: center;
+        }
+
+        p{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            color: #E0E0E0;
+            line-height: 140%;
+            font-weight: 300;
+            
         }
     }
 }

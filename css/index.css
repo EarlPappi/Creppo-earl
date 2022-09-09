@@ -105,8 +105,20 @@
   }
 }
 .heroSection .hero .btn-p {
+  padding: 1rem 2rem;
   color: white;
   background-color: #3671e9;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 2em;
+}
+.heroSection .hero .btn-p span {
+  background: white;
+  color: #3671e9;
+  padding: 0.7rem 1rem;
+  border-radius: 100%;
 }
 .heroSection .iconSection {
   padding: 2rem 0rem;
@@ -140,6 +152,77 @@
 .heroSection .iconSection .iconCard p {
   color: #E0E0E0;
   line-height: 155%;
+}
+.heroSection .chooseSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 767px) {
+  .heroSection .chooseSection {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+@media (min-width: 767px) {
+  .heroSection .chooseSection div {
+    width: 50%;
+  }
+}
+.heroSection .chooseSection h2 {
+  color: white;
+  font-size: 3rem;
+  line-height: 120%;
+}
+@media (min-width: 767px) {
+  .heroSection .chooseSection h2 {
+    width: 90%;
+  }
+}
+.heroSection .chooseSection p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #E0E0E0;
+  line-height: 140%;
+  font-weight: 300;
+}
+@media (min-width: 767px) {
+  .heroSection .chooseSection p {
+    width: 80%;
+  }
+}
+.heroSection .chooseSection a {
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #3671e9;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 2em;
+}
+.heroSection .chooseAlt {
+  margin-top: 8rem;
+}
+.heroSection .chooseAlt h2 {
+  color: white;
+  font-size: 3rem;
+  line-height: 120%;
+  text-align: center;
+}
+@media (min-width: 767px) {
+  .heroSection .chooseAlt h2 {
+    width: 90%;
+  }
+}
+.heroSection .chooseAlt p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #E0E0E0;
+  line-height: 140%;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=index.css.map */
