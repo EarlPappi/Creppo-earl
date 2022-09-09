@@ -112,8 +112,9 @@
   padding: 2rem 0rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
   justify-content: space-around;
+  margin-bottom: 4rem;
 }
 @media (min-width: 767px) {
   .heroSection .iconSection {
